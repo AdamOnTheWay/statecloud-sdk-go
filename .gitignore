@@ -24,6 +24,8 @@ go.work.sum
 # env file
 .env
 
+go.sum
+.idea
 .vscode
 go.sum
 .idea
