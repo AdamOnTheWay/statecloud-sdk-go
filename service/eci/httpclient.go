@@ -199,6 +199,8 @@ func (c *HttpClient) Execute(req *request) (*response, error) {
 
 	resp := protocol.Response{}
 
+	fmt.Println("raw", req.rawRequest)
+
 	err = c.doer.Do(req.ctx, req.rawRequest, &resp)
 
 	response := &response{
