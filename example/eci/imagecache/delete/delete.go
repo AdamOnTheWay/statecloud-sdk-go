@@ -27,8 +27,8 @@ func init() {
 
 func main() {
 	config := &config.OpenapiConfig{
-		AccessKey: "10df4de7266e49fdbe7958e7c4920b56",
-		SecretKey: "c7f655a8952b49cba5edba79d099ef77",
+		AccessKey: accessKey,
+		SecretKey: secretKey,
 	}
 
 	options := []eci.Option{

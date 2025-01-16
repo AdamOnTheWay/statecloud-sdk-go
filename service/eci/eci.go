@@ -44,10 +44,6 @@ func NewClientSet(baseDomain string, options ...Option) (ClientSet, error) {
 	}
 	options = append(defaultOpt, options...)
 	imageCacheCli, err := NewImageCacheClient(baseDomain, options...)
-  if err != nil {
-		return nil, err
-	}
-	containerGroupCli, err := NewContainerGroupClient(baseDomain, options...)
 	if err != nil {
 		return nil, err
 	}
